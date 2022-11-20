@@ -1,0 +1,25 @@
+{
+    "name": "jevkoml-basic-highlighting",
+    "displayName": "jevkoml-basic-highlighting",
+    "description": "Basic syntax highlighting for JevkoML",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "jevkoml",
+            "aliases": ["JevkoML", "jevkoml"],
+            "extensions": [".jevkoml", ".jvkml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "jevkoml",
+            "scopeName": "source.jevkoml",
+            "path": "./syntaxes/jevkoml.tmLanguage.json"
+        }]
+    }
+}
