@@ -26,7 +26,7 @@
 		},
 		"disabled": {
 			"name": "comment.jevkoml",
-			"begin": "\\s*(\\\\)?-((`[`\\[\\]])|[^`\\[\\]])+\\[",
+			"begin": "\\s*(\\\\)?-((`[`\\[\\]])|[^`\\[\\]])*\\[",
 			"end": "\\]",
 			"patterns": [
 				{"include": "#brackets-disabled"}
