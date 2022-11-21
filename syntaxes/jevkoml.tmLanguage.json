@@ -9,6 +9,9 @@
 			"include": "#attr"
 		},
 		{
+			"include": "#directive"
+		},
+		{
 			"include": "#tag"
 		},
 		{
@@ -49,7 +52,7 @@
 			]
 		},
 		"attr": {
-			"name": "entity.other.attribute-name",
+			"name": "entity.other.attribute-name.jevkoml",
 			"begin": "(((\\\\)?((`[`\\[\\]])|[^`\\[\\]\\\\])+|\\\\)=|\\.)(\\[)",
 			"end": "(\\])",
 			"patterns": [
@@ -69,8 +72,16 @@
 				{"include": "#brackets-attr"}
 			]
 		},
+		"directive": {
+			"name": "keyword.control.jevkoml",
+			"begin": "(?=((\\\\)?/((`[`\\[\\]])|[^`\\[\\]\\\\])+|\\\\)(\\[|`/))",
+			"end": "(?=(\\[|`/))",
+			"patterns": [
+				{"include": "#digraph2"}
+			]
+		},
 		"tag": {
-			"name": "entity.name.tag",
+			"name": "entity.name.tag.jevkoml",
 			"begin": "(?=((\\\\)?((`[`\\[\\]])|[^`\\[\\]\\\\])+|\\\\)(\\[|`/))",
 			"end": "(?=(\\[|`/))",
 			"patterns": [
