@@ -3,6 +3,9 @@
 	"name": "JevkoML",
 	"patterns": [
 		{
+			"include": "#disabled"
+		},
+		{
 			"include": "#attr"
 		},
 		{
@@ -21,6 +24,22 @@
 			"match": "`[`\\[\\]]",
 			"name": "string.regexp.jevkoml"
 		},
+		"disabled": {
+			"name": "comment.jevkoml",
+			"begin": "\\s*(\\\\)?-((`[`\\[\\]])|[^`\\[\\]])+\\[",
+			"end": "\\]",
+			"patterns": [
+				{"include": "#brackets-disabled"}
+			]
+		},
+		"brackets-disabled": {
+			"name": "comment.jevkoml",
+			"begin": "\\[",
+			"end": "\\]",
+			"patterns": [
+				{"include": "#brackets-disabled"}
+			]
+		},
 		"text": {
 			"name": "keyword.jevkoml",
 			"begin": "(?=(\\\\|^)((`[`\\[\\]])|[^`\\[\\]])+\\\\)",
@@ -35,19 +54,19 @@
 			"end": "(\\])",
 			"patterns": [
 				{"include": "#digraph2"},
-				{"include": "#brackets"},
+				{"include": "#brackets-attr"},
 				{
 					"name": "string.jevkoml",
 					"match": "."
 				}
 			]
 		},
-		"brackets": {
+		"brackets-attr": {
 			"name": "invalid.illegal.jevkoml",
 			"begin": "\\[",
 			"end": "\\]",
 			"patterns": [
-				{"include": "#brackets"}
+				{"include": "#brackets-attr"}
 			]
 		},
 		"tag": {
