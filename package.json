@@ -3,7 +3,7 @@
     "displayName": "jevkoml-basic-highlighting",
     "description": "Basic syntax highlighting for .jevkoml",
     "publisher": "jevko",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.63.0"
     },
@@ -16,7 +16,11 @@
             "aliases": ["jevkoml"],
             "extensions": [".jevkoml", ".jvkml", ".jvkm"],
             "firstLine": "#!/usr/bin/env -S jevko format \\[jevkoml\\]",
-            "configuration": "./language-configuration.json"
+            "configuration": "./language-configuration.json",
+            "icon": {
+                "dark": "lang-icon.png",
+                "light": "lang-icon.png"
+            }
         }],
         "grammars": [{
             "language": "jevkoml",
@@ -37,5 +41,9 @@
     ],
     "scripts": {
         "vscode:prepublish": "jevko syntaxes/jevkoml.jevkodata"
+    },
+    "galleryBanner": {
+        "color": "#000000",
+        "theme": "dark"
     }
 }
