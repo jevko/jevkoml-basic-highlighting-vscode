@@ -1,10 +1,22 @@
 # jevkoml-basic-highlighting-vscode
 
-Basic syntax highlighting for JevkoML in Visual Studio Code.
+Basic syntax highlighting for .jevkoml in Visual Studio Code.
+
+NOTE: experimental.
+
+This extension is published to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=jevko.jevkoml-basic-highlighting) as well as the [Open VSX Registry](https://open-vsx.org/extension/jevko/jevkoml-basic-highlighting).
+
+## Installation
+
+Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
+
+```
+ext install jevko.jevkoml-basic-highlighting
+```
 
 ## Features
 
-Basic syntax highlighting for JevkoML that works in Visual Studio Code.
+Basic syntax highlighting for .jevkoml that works in Visual Studio Code.
 
 ![screenshot](screenshot.png)
 
@@ -43,11 +55,9 @@ However Visual Studio Code allows more advanced extensions for semantic highligh
 
 ## Release Notes
 
-### 0.0.1
+See [the CHANGELOG](CHANGELOG.md).
 
-Initial version. Most basic highlighting works as well as possible.
-
-## Installation
+## Installation of the latest development snapshot directly from the git repository
 
 To start using this extension with Visual Studio Code copy the folder that contains this repository into the `<user home>/.vscode/extensions` folder and restart Code.
 

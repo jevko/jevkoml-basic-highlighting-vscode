@@ -1,7 +1,8 @@
 {
     "name": "jevkoml-basic-highlighting",
     "displayName": "jevkoml-basic-highlighting",
-    "description": "Basic syntax highlighting for JevkoML",
+    "description": "Basic syntax highlighting for .jevkoml",
+    "publisher": "jevko",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.63.0"
@@ -12,8 +13,9 @@
     "contributes": {
         "languages": [{
             "id": "jevkoml",
-            "aliases": ["JevkoML", "jevkoml"],
-            "extensions": [".jevkoml", ".jvkml"],
+            "aliases": ["jevkoml"],
+            "extensions": [".jevkoml", ".jvkml", ".jvkm"],
+            "firstLine": "#!/usr/bin/env -S jevko format \\[jevkoml\\]",
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
@@ -21,5 +23,19 @@
             "scopeName": "source.jevkoml",
             "path": "./syntaxes/jevkoml.tmLanguage.json"
         }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jevko/jevkoml-basic-highlighting-vscode.git"
+    },
+    "icon": "icon.png",
+    "homepage": "https://jevko.org",
+    "keywords": [
+        "jevko", "markup", "jevkoml", "syntax", "minimal", 
+        "text", "format", "heredoc", "html", "xml",
+        "minimal", "simple", "flexible"
+    ],
+    "scripts": {
+        "vscode:prepublish": "jevko syntaxes/jevkoml.jevkodata"
     }
 }
