@@ -4,6 +4,10 @@ All notable changes to the "jevko-basic-highlighting" extension will be document
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## 0.0.3
+
+Change icon.
+
 ## 0.0.2
 
 Add icon and theme.
