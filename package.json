@@ -18,8 +18,8 @@
             "firstLine": "#!/usr/bin/env -S jevko format \\[jevkoml\\]",
             "configuration": "./language-configuration.json",
             "icon": {
-                "dark": "lang-icon.png",
-                "light": "lang-icon.png"
+                "dark": "jevkoml.png",
+                "light": "jevkoml.png"
             }
         }],
         "grammars": [{
@@ -32,7 +32,7 @@
         "type": "git",
         "url": "https://github.com/jevko/jevkoml-basic-highlighting-vscode.git"
     },
-    "icon": "icon.png",
+    "icon": "jevkoml.png",
     "homepage": "https://jevko.org",
     "keywords": [
         "jevko", "markup", "jevkoml", "syntax", "minimal", 
