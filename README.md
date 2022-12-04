@@ -1,4 +1,4 @@
-<p style="text-align: center;">
+<p align="center" style="text-align: center;">
 <img src="jevkoml.png" width="80" height="80" /><br/>
 <a href="https://jevko.org">jevko.org</a>
 </p>

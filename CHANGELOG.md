@@ -4,6 +4,14 @@ All notable changes to the "jevko-basic-highlighting" extension will be document
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## 0.0.4
+
+Add highlighting for heredoc comments/disabled heredocs, e.g.
+
+```
+-prefix `//something something//
+```
+
 ## 0.0.3
 
 Change icon.
