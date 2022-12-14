@@ -4,6 +4,12 @@
 <span>[EXPERIMENTAL]</span>
 </p>
 
+⚠️⚠️⚠️ THIS EXTENSION IS DEPRECATED BY AND CONFLICTS WITH: ⚠️⚠️⚠️
+
+* [Jevko Interface](https://github.com/jevko/jevko-vscode): [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=jevko.jevko) | [Open VSX Registry](https://open-vsx.org/extension/jevko/jevko)
+
+⚠️⚠️⚠️ PLEASE UNINSTALL/DISABLE IT BEFORE INSTALLING JEVKO INTERFACE ⚠️⚠️⚠️
+
 # jevkoml-basic-highlighting-vscode
 
 Basic syntax highlighting for .jevkoml in Visual Studio Code.

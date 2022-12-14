@@ -1,9 +1,9 @@
 {
     "name": "jevkoml-basic-highlighting",
-    "displayName": "jevkoml-basic-highlighting",
-    "description": "Basic syntax highlighting for .jevkoml",
+    "displayName": "[DEPRECATED] jevkoml-basic-highlighting",
+    "description": "This extension is deprecated in favor of the Jevko Interface extension.",
     "publisher": "jevko",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.63.0"
     },
